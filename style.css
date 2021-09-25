@@ -1,63 +1,124 @@
- 
-.body{
+body {
     margin: 0;
     padding: 0;
- }
-.signup{
-    width: 300px;
-    box-shadow: 0 0 3px 0 gray;
-    background: #fff;
-    padding: 20px;
-    margin: 5% auto 0;
-    text-align: center;
   }
+
+.signin-btn{
+    font-size: 17px;  
+    width: 90px;
+    height: 35px;
+    color: #fff;
+    background: #0066FF;
+    border-radius: 5px;
+    border: none;
+    top: 25px;
+    right: 45px;
+    position: absolute;
+ }
+
+.signin-btn:hover{
+    background: #0099FF;
+}
+
 .login{
     width: 300px;
     box-shadow: 0 0 3px 0 gray;
     background: #fff;
     padding: 20px;
-    margin: 5% auto 0;
+    margin: 5% auto 5%;
     text-align: center;
-  }
-.signin-btn{
-    font-size: 18px;  
-     font-weight: bold;
-     width: 100px;
-     height: 30px;
-     background-color: gray;
-     color: white;
-     border-radius: 5px;
-     border: 2px solid gray;
-     top: 0;
-     right: 0;
-     margin: 10px;
-     position: absolute;  
-}
-.signin-btn:hover{
-    background-color: darkgray;
-}
-.input-box{
-    width: 100%;
-    border: 1px solid gray;
-    margin: 6px auto;
-    height: 32px;
-    border-radius: 20px;
-    padding: 0 10px;
-    box-sizing: border-box;
-    outline: none;
-    text-align: center;
+    border-radius: 10px;
+} 
+
+.input-box label{
+    margin: 10px 10px;
+    position: absolute;
+    font-weight: bold;
     color: black;
 }
-.signup-btn{
-    background-color: transparent;
-    margin: 10px 10px;
-}
-.login-btn{
-    margin: 10px 10px;
-}
-h1{
+
+.input-box input{
+    width: 100%;
+    border: 1px solid gray;
+    height: 32px;
+    margin: 10%  auto 15px;
+    border-radius: 20px;
+    text-align: center;
+    outline: none;
+ }
+.login button{
+    font-size: 18px;  
+    width: 90px;
+    height: 35px;
+    outline: none;
+    color: #fff;    
+    border-radius: 5px;
+    border: none;
+    margin: 20px;
+    box-sizing: border-box;
+    background: #0066FF;
+  }
+
+.signup{
+    width: 350px;
+    box-shadow: 0 0 3px 1px gray;
+    background: #fff;
+    padding: 20px ;
+    padding-bottom: 1px;
+    margin: 2% auto 2%;
+    text-align: center;
+    border-radius: 10px;
+   }
+
+.signup h1{
     text-align: center;
     color: darkgray;
 }
+
+.inputbox label{
+    margin: 0 10px;
+    position: absolute;
+    font-weight: bold;
+    color: black;
+
+}  
+ 
+.inputbox input{
+    width: 100%;
+    border: 1px solid gray;
+    height: 32px;
+    margin: 5% auto 15px;
+    border-radius: 20px;
+    text-align: center;
+    outline: none;
+}
+
+.signup-btn{
+    font-size: 18px;  
+    width: 30%;
+    height: 35px;
+    outline: none;
+    color: #fff;    
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0;
+    background: #0066FF;
+ }
+
+#password-confirmation{
+    text-align: left;
+    position: relative;
+    padding: 10px;
+    margin: 0 ;
+    display: none;
+ }
+#password-confirmation p{
+    margin: 5px 5px;
+    font-size: 15px;
+    color: lightgray;
+ }
+ 
+ 
+ 
 
  
