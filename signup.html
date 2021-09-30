@@ -30,7 +30,7 @@
                 <input type="password" id="confirm-password" name="Confirm password" placeholder="Confirm password"
                     required>
             </div>
-            <button type="submit" class="signup-btn" onclick="validar(form.email.value)">Sign up</button>
+            <button type="submit" class="signup-btn" onclick="validate(form.email.value)">Sign up</button>
 
             <div id="error"></div>
             <div id="pswConfirmation">
@@ -114,15 +114,11 @@
         }
  
         var email = document.getElementById("email");
-        function validar(email) {
+        function validate(email) {
             var expression = /\w+@\w+\.+[a-z]/;
-            if (expression.test(email)) {
-                alert("valid");
+            if (!expression.test(email)) {
+                alert("Enter a valid email address");
                 return true;
-            }
-            else {
-                alert("no valid");
-                return false;
             }
         }
     </script>
