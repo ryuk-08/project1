@@ -13,20 +13,7 @@ session_start();
         <title>News</title>         
     </head>
     <body>
- 
- <!--    <nav>
-        <div class="web-header">
-                <h2>Logo</h2>
-                <li class="sign-btn"><a href="login_form.php"> Sign in </a></li>
-                <div class="search">
-                <i class="bi bi-search"></i>      
-                <label for="search"></label>
-                <input type="search" id="search" name="searchBar" placeholder="type to search" >
-                <button>search</button>   
-            </div>
-        </div> -->
- 
-        <nav>
+          <nav class = "menu">
              <ul>
                 <li><a href = "#">Busines</a> </li>
                 <li> <a href = "#">Entertainment</a> </li>
@@ -37,20 +24,26 @@ session_start();
                 <li> <a href = "#">Technology </a></li>
         </ul>
 
-          <a href="login_form.php" class="signin-btn"> Sign in </a> 
+<!-- <a href="login_form.php" class="signin-btn"> Sign in </a>  -->
+          <form class="search">
+                 <input type="text"  name="searchBar" placeholder="type to search" >
+                <button>search</button>   
+            </form>
     </div>
     </nav>
 
-            
+            <div class="header-login">
                 <?php
                 if(isset($_SESSION["usernameid"])){
-                    echo "<li> <a href='profile_page.php'> Profile page </a></li>";
-                    echo "<li > <a href='config/logout.php'>Log out</a></li>";
+                    echo '<form action="config/logout.php" class = "btn" method="post"><button
+                    type= "submit" id="btn" name="log-btn">Log out</button></form>';
                 }
                 else{
-                    echo "<li> <a href='signup_form.php'> Sign up </a></li>";
-                    echo "<li> <a href ='login_form.php'> Sign in </a></li>";
-                }
+                     echo '<form action="login_form.php" class="btn"><button
+                     type= "submit" id="btn" name="sign-btn">Sign in</button></form>';
+                 }
                 ?>
+                </div>
+
              </body>
             </html>
