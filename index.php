@@ -1,9 +1,12 @@
 <?php include_once 'header.php' ?>
  
  <div >
-    <?php
+     <?php
     if(isset($_SESSION["usernameid"])){     
-        echo "<p> Hello there " . $_SESSION["usernameid"] . "</p>";
+        echo '<p class="login-status"> You are logged in! </p>';
+    }
+    else{
+        echo '<p class="login-status"> You are logged out! </p>';
     }
 ?>
 </div>
