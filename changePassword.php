@@ -3,7 +3,7 @@
 <?php include 'config/connect.php';
  
     if(!isset($_GET["code"])){
-        exit("Can't find code");
+        exit("Can't find page");
     }
     $code = $_GET["code"];
 
