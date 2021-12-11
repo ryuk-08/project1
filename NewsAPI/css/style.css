@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+body{
+    background: url(../img/background.jpg);
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container form{
+    background: #fff;
+    padding: 30px 35px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container form .inputbox{
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.container form .signup-btn, .container form .login-btn{
+    background: #1e293e;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.container form .signup-btn:hover, .container form .login-btn:hover{
+    background: #3a5078;
+}
+
+.container form .link{
+    padding: 5px 0;
+    text-align: center;
+}
+
+.container form .link a{
+    color: #6665ee;
+    text-decoration: none;
+}
+
+
+h2{
+    text-align: center;
+}
+
+.wrapper{
+    background: #1e293e;
+    text-align: center;
+}
+
+.wrapper h1 a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    transition: all 0.3s;
+}
+
+.wrapper ul{
+    display: inline-flex;
+    list-style: none;
+}
+
+.wrapper ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.wrapper ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.wrapper ul li a:hover{
+    color: #6665ee;
+}
+
+img{
+    width: 400px;
+}
